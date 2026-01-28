@@ -128,7 +128,7 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "EY",
+        company: "Ernst & Young (EY)",
         timeframe: "2022 - Present",
         role: "Head of Blockchain & Crypto Practice Spain",
         achievements: [
@@ -140,7 +140,8 @@ const about: About = {
           <>
             Advised organizations on custody models, security architecture, and
             operating frameworks for blockchain-based systems handling real
-            assets and real operational risk within financial services environments.
+            assets and real operational risk within financial services
+            environments.
           </>,
 
           <>
@@ -153,33 +154,71 @@ const about: About = {
             security, and compliance, bridging advisory and hands-on delivery.
           </>,
         ],
-        images: [
-        ],
+        images: [],
       },
-     
-{
-  company: "KeepCoding®",
-  timeframe: "2023 – Present",
-  role: "Professor — Blockchain & Cryptoassets Full Stack Bootcamp",
-  achievements: [
-    <>
-      Professor in the Blockchain & Cryptoassets Full Stack Bootcamp,
-      a comprehensive program covering blockchain fundamentals,
-      cryptocurrencies, tokens, and enterprise DLT platforms.
-    </>,
-    <>
-      Responsible for delivering the Smart Contracts module focused on
-      enterprise blockchain development using Hyperledger Fabric,
-      including chaincode development, SDK integration, and data modeling.
-    </>,
-    <>
-      Emphasis on production-ready decentralized applications,
-      addressing private data handling and real-world architectural
-      and operational considerations.
-    </>,
-  ],
-  images: [],
-},
+            {
+        company: "Swear IT",
+        timeframe: "2020 – 2024",
+        role: "Tech Co-Founder",
+        achievements: [
+          <>
+            Co-founded Swear IT, a B2B SaaS platform using blockchain to provide
+            verifiable product traceability, authenticity, and compliance across
+            supply chains.
+          </>,
+          <>
+            Led the technical architecture and evolution of the platform,
+            integrating blockchain-backed verification, QR-based consumer
+            access, and smart contract–driven certifications.
+          </>,
+          <>
+            Took the company from inception through MVP, market adoption, and a
+            successful exit, operating the platform under real-world regulatory
+            and commercial constraints.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "TECH Universidad Tecnológica",
+        timeframe: "2022 – Present",
+        role: "Professor",
+        achievements: [
+          <>
+            Professor in postgraduate programs focused on application development
+            and modern software engineering practices.
+          </>,
+          <>
+            Teaching roles include the Master’s Degree in Mobile Application
+            Development and the Master’s Degree in Front-End Programming and
+            Full-Stack Development.
+          </>,
+        ],
+        images: [],
+      },
+            {
+        company: "KeepCoding®",
+        timeframe: "2023 – Present",
+        role: "Professor",
+        achievements: [
+          <>
+            Professor in the Blockchain & Cryptoassets Full Stack Bootcamp, a
+            comprehensive program covering blockchain fundamentals,
+            cryptocurrencies, tokens, and enterprise DLT platforms.
+          </>,
+          <>
+            Responsible for delivering the Smart Contracts module focused on
+            enterprise blockchain development using Hyperledger Fabric,
+            including chaincode development, SDK integration, and data modeling.
+          </>,
+          <>
+            Emphasis on production-ready decentralized applications, addressing
+            private data handling and real-world architectural and operational
+            considerations.
+          </>,
+        ],
+        images: [],
+      }
 
     ],
   },
@@ -188,74 +227,49 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Universidad Yacambú",
+        description: <>Bachelor’s degree in Industrial Engineering.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Universidad de Alcalá",
+        description: (
+          <>Specialized program in Blockchain and Decentralized Applications.</>
+        ),
+      },
+      {
+        name: "Grupo Vaughan",
+        description: (
+          <>
+            Executive-level training in professional English for business and
+            technical contexts.
+          </>
+        ),
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
+        title: "Blockchain",
+
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
+            name: "Solidity",
+            icon: "solidity",
+          },
+          {
+            name: "Hyperledger Fabric",
+            icon: "hyperledgerFabric",
+          },
+          {
+            name: "Ethereum",
+            icon: "ethereum",
           },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
     ],
   },
@@ -264,7 +278,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about Blockchain & Digital Assets...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -287,46 +301,12 @@ const gallery: Gallery = {
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    // Example:
+    // {
+    //   src: "/images/gallery/horizontal-1.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
   ],
 };
 
