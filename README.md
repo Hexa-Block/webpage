@@ -1,4 +1,4 @@
-# Seven Blocks — Landing & Portfolio
+# HexaBlock — Landing & Portfolio
 
 This repository contains the Seven Blocks landing page and my personal portfolio. 
 
@@ -7,7 +7,7 @@ This repository contains the Seven Blocks landing page and my personal portfolio
 1) Clone the repo
 
 ```bash
-git clone https://github.com/thesevenblocks/webpage.git
+git clone https://github.com/hexa-block/webpage.git
 cd webpage
 ```
 
