@@ -23,7 +23,7 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Suscríbete a la Newsletter de Seven Blocks</>,
+  title: <>Suscríbete a la Newsletter de HexaBlock</>,
   description: <>Insights sobre blockchain y activos digitales</>,
 };
 
@@ -154,13 +154,6 @@ const about: About = {
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
      
