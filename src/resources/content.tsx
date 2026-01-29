@@ -15,7 +15,7 @@ const person: Person = {
   lastName: "Frias",
   name: `Pedro Frias`,
   role: "Head of Blockchain & Crypto Practice – EY Digital Engineering Team",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/yo.jpeg",
   email: "pedro@hexablock.io",
   location: "Europe/Madrid", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Spanish"], // optional: Leave the array empty if you don't want to display languages
@@ -79,7 +79,7 @@ const home: Home = {
         </Text>
       </Row>
     ),
-    href: "/work/swearit",
+    href: "/work",
   },
   subline: (
     <>
@@ -98,10 +98,10 @@ const about: About = {
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
-    subItems: false,
+    subItems: true,
   },
   avatar: {
-    display: false,
+    display: true,
   },
   calendar: {
     display: true,
