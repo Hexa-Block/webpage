@@ -23,8 +23,8 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Suscríbete a la Newsletter de HexaBlock</>,
-  description: <>Insights sobre blockchain y activos digitales</>,
+  title: <>Subscribe to HexaBlock’s Newsletter</>,
+  description: <>Insights on blockchain and digital assets</>,
 };
 
 const social: Social = [
