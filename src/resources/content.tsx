@@ -226,16 +226,23 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
-      {
-        name: "Universidad Yacambú",
-        description: <>Bachelor’s degree in Industrial Engineering.</>,
-      },
-      {
+            {
         name: "Universidad de Alcalá",
         description: (
           <>Specialized program in Blockchain and Decentralized Applications.</>
         ),
       },
+      {
+        name: "Universidad Yacambú",
+        description: <>Bachelor’s degree in Industrial Engineering.</>,
+      },
+            {
+        name: "CryptoCurrency Security Standard Auditor (CCSSA)",
+        description: (
+          <>Expert in the CCSS standard, able to evaluate cryptocurrency-based systems and assign a compliance grade.</>
+        ),
+      },
+
       {
         name: "Grupo Vaughan",
         description: (
