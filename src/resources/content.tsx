@@ -105,7 +105,7 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendly.com/pedro-hexablock",
   },
   intro: {
     display: true,
