@@ -227,13 +227,13 @@ const about: About = {
     title: "Studies",
     institutions: [
             {
-        name: "Universidad de Alcalá",
+        name: "Alcalá University",
         description: (
           <>Specialized program in Blockchain and Decentralized Applications.</>
         ),
       },
       {
-        name: "Universidad Yacambú",
+        name: "Yacambú University",
         description: <>Bachelor’s degree in Industrial Engineering.</>,
       },
             {
