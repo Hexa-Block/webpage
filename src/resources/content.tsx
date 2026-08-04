@@ -156,7 +156,7 @@ const about: About = {
       },
       {
         company: "Ernst & Young (EY)",
-        timeframe: "2022 - Present",
+        timeframe: "2022 - 2026",
         role: "Head of Blockchain & Crypto Practice Spain",
         achievements: [
           <>
