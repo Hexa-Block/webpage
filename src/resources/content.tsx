@@ -14,7 +14,7 @@ const person: Person = {
   firstName: "Pedro",
   lastName: "Frias",
   name: `Pedro Frias`,
-  role: "Head of Blockchain & Crypto Practice – EY Digital Engineering Team",
+  role: "Engineering Lead - Custody – BitMEX",
   avatar: "/images/yo.jpeg",
   email: "pedro@hexablock.io",
   location: "Europe/Madrid", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -112,14 +112,15 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        {person.name} is a blockchain and digital assets leader with extensive
-        experience leading enterprise initiatives from strategy to production.
-        His work focuses on custody, security architecture, and the operational
-        realities of running blockchain-based platforms at scale, where private
-        keys, access controls, and governance are central to system trust and
-        continuity. He helps organizations move beyond experimentation,
-        designing and operating resilient systems that integrate technology,
-        risk, and business needs in complex, real-world environments.
+        {person.name} is a blockchain and digital assets professional with
+        extensive experience leading enterprise initiatives from strategy to
+        production. His work focuses on custody, security architecture, and the
+        operational realities of running blockchain-based platforms at scale,
+        where private keys, access controls, and governance are central to
+        system trust and continuity. He helps organizations move beyond
+        experimentation, designing and operating resilient systems that
+        integrate technology, risk, and business needs in complex, real-world
+        environments.
       </>
     ),
   },
@@ -127,6 +128,32 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
+      {
+        company: "BitMEX",
+        timeframe: "2026 – Present",
+        role: "Engineering Lead, Custody",
+        achievements: [
+          <>
+            Work with the Custody team and engineers across Trading and Wallet
+            Technology on the technical direction and evolution of the custody
+            platform.
+          </>,
+          <>
+            Contribute to the integration of new capabilities, assets, and
+            blockchain networks into the custody platform.
+          </>,
+          <>
+            Collaborate with Product, Risk, Trading, and Engineering teams to
+            improve the security, reliability, and scalability of systems
+            supporting digital asset and trading operations.
+          </>,
+          <>
+            Support architecture reviews, engineering delivery, and the
+            resolution of technical issues across custody and wallet systems.
+          </>,
+        ],
+        images: [],
+      },
       {
         company: "Ernst & Young (EY)",
         timeframe: "2022 - Present",
@@ -156,7 +183,7 @@ const about: About = {
         ],
         images: [],
       },
-            {
+      {
         company: "Swear IT",
         timeframe: "2020 – 2024",
         role: "Tech Co-Founder",
@@ -185,8 +212,8 @@ const about: About = {
         role: "Professor",
         achievements: [
           <>
-            Professor in postgraduate programs focused on application development
-            and modern software engineering practices.
+            Professor in postgraduate programs focused on application
+            development and modern software engineering practices.
           </>,
           <>
             Teaching roles include the Master’s Degree in Mobile Application
@@ -196,7 +223,7 @@ const about: About = {
         ],
         images: [],
       },
-            {
+      {
         company: "KeepCoding®",
         timeframe: "2023 – Present",
         role: "Professor",
@@ -218,15 +245,14 @@ const about: About = {
           </>,
         ],
         images: [],
-      }
-
+      },
     ],
   },
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
-            {
+      {
         name: "Alcalá University",
         description: (
           <>Specialized program in Blockchain and Decentralized Applications.</>
@@ -236,10 +262,13 @@ const about: About = {
         name: "Yacambú University",
         description: <>Bachelor’s degree in Industrial Engineering.</>,
       },
-            {
+      {
         name: "CryptoCurrency Security Standard Auditor (CCSSA)",
         description: (
-          <>Expert in the CCSS standard, able to evaluate cryptocurrency-based systems and assign a compliance grade.</>
+          <>
+            Expert in the CCSS standard, able to evaluate cryptocurrency-based
+            systems and assign a compliance grade.
+          </>
         ),
       },
 
