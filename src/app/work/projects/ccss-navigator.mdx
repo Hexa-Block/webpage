@@ -1,0 +1,82 @@
+---
+
+title: "Making the CryptoCurrency Security Standard Easier to Navigate"
+publishedAt: "2026-08-04"
+summary: "An open-source dashboard for exploring, filtering, and understanding the CryptoCurrency Security Standard."
+images:
+  - "/images/projects/project-03/cover-0.jpeg"
+  - "/images/projects/project-03/cover-1.jpeg"
+  - "/images/projects/project-03/cover-2.jpeg"
+team:
+  - name: "Pedro Frias"
+    role: "Creator & Maintainer"
+    avatar: "/images/yo.jpeg"
+    linkedIn: "https://www.linkedin.com/in/pedro-frias-favero/"
+link: "https://ccssnavigator.com/"
+
+---
+
+## Overview
+
+CCSS Navigator is an open-source, community-maintained tool designed to make the CryptoCurrency Security Standard easier to explore and understand.
+
+The [CryptoCurrency Security Standard](https://cryptoconsortium.org/ccss-table-v9/) defines security requirements for systems that use cryptocurrencies, including exchanges, web applications, and custody solutions. While the standard provides an important framework for evaluating these systems, navigating its different aspects, controls, requirements, certification levels, and versions can be challenging.
+
+CCSS Navigator presents this information through a searchable and filterable interface, allowing auditors, security professionals, implementers, and people learning the standard to explore its structure more efficiently.
+
+The project is an independent community initiative and is not an official source of truth. Standard requirements should always be validated against the official references published by the CryptoCurrency Certification Consortium.
+
+## Key Features
+
+* **Structured Standard Navigation**
+  Organizes CCSS aspects, controls, and individual requirements in a consistent interface, making the relationships between them easier to understand.
+
+* **Certification-Level Filtering**
+  Allows users to filter requirements by CCSS Level I, Level II, and Level III and identify the expectations associated with each level of security maturity.
+
+* **Aspect and Control Drill-Down**
+  Supports progressively narrowing the standard by aspect and control, helping users focus on the areas relevant to a particular assessment or implementation.
+
+* **Searchable Requirements**
+  Makes it easier to locate requirements and supporting information without manually navigating long reference documents.
+
+* **Configurable Data Views**
+  Users can show or hide table columns depending on the information needed for their current workflow.
+
+* **Standard Overview Metrics**
+  Provides quick visibility into the number of aspects, controls, and requirements available in each supported version.
+
+* **Version-Aware Datasets**
+  Stores standard data as structured, versioned datasets, creating a foundation for comparing and supporting multiple CCSS releases.
+
+* **Open-Source Contributions**
+  Enables the community to report data mismatches, improve usability, add references, and contribute support for additional versions.
+
+## Technologies Used
+
+* **Next.js and React**: Used to build the application and its server- and client-side interface.
+* **TypeScript**: Provides strongly typed domain models for CCSS aspects, controls, levels, and requirements.
+* **Tailwind CSS**: Used to create a responsive and consistent visual system.
+* **shadcn/ui and Radix UI**: Provide accessible interface primitives for tables, filters, navigation, and theme controls.
+* **Static JSON Datasets**: Keep standard versions explicit, reviewable, and straightforward to update.
+* **Open-Source Architecture**: The codebase, datasets, contribution guidelines, and issue tracking are publicly available through GitHub.
+
+## Challenges and Learnings
+
+One of the main challenges was translating a hierarchical security standard into an interface that remains useful at different levels of detail.
+
+A user may begin with a broad aspect of cryptocurrency security, narrow the view to a particular control, and eventually inspect the requirements associated with a specific certification level. Supporting this workflow required treating the standard as structured domain data rather than displaying it as a conventional document.
+
+
+## Outcome
+
+CCSS Navigator provides a faster and more approachable way to explore the structure of the CryptoCurrency Security Standard.
+
+By converting the standard into a structured, searchable, and filterable experience, the project helps security professionals and cryptocurrency teams identify relevant requirements, understand certification levels, and navigate the relationships between aspects and controls.
+
+
+## Open Source
+
+The source code and datasets are publicly available on [GitHub](https://github.com/Hexa-Block/CCSS).
+
+Contributions are welcome, particularly for dataset corrections, additional CCSS versions, and usability improvements.
