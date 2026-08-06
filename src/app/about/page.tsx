@@ -14,6 +14,7 @@ import {
 } from "@once-ui-system/core";
 import { baseURL, about, home, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
+import Logo from "@/components/about/Logo";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
 
@@ -80,7 +81,6 @@ export default function About() {
       <Row fillWidth s={{ direction: "column"}} horizontal="center">
         {about.avatar.display && (
           <Column
-            className={styles.avatar}
             top="64"
             fitHeight
             position="sticky"
@@ -209,18 +209,31 @@ export default function About() {
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
-                  <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
-                    <Row fillWidth horizontal="between" vertical="end" marginBottom="4">
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
+                  <Column
+                    key={`${experience.company}-${experience.role}-${index}`}
+                    className={styles.aboutItem}
+                    fillWidth
+                  >
+                    <Row fillWidth horizontal="between" vertical="start" marginBottom="m" gap="12">
+                      <Row minWidth={0} gap="12" vertical="center">
+                        <Logo
+                          logo={experience.logo}
+                          fallbackIcon="🏢"
+                          scale={experience.logoScale}
+                        />
+                        <Column minWidth={0} gap="4">
+                          <Text id={experience.company} variant="heading-strong-l">
+                            {experience.company}
+                          </Text>
+                          <Text variant="body-default-s" onBackground="brand-weak">
+                            {experience.role}
+                          </Text>
+                        </Column>
+                      </Row>
                       <Text variant="heading-default-xs" onBackground="neutral-weak">
                         {experience.timeframe}
                       </Text>
                     </Row>
-                    <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
-                      {experience.role}
-                    </Text>
                     <Column as="ul" gap="16">
                       {experience.achievements.map(
                         (achievement: React.ReactNode, index: number) => (
@@ -268,14 +281,27 @@ export default function About() {
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
                 {about.studies.institutions.map((institution, index) => (
-                  <Column key={`${institution.name}-${index}`} fillWidth gap="4">
-                    <Text id={institution.name} variant="heading-strong-l">
-                      {institution.name}
-                    </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
-                      {institution.description}
-                    </Text>
-                  </Column>
+                  <Row
+                    key={`${institution.name}-${index}`}
+                    className={styles.aboutItem}
+                    fillWidth
+                    gap="12"
+                    vertical="center"
+                  >
+                    <Logo
+                      logo={institution.logo}
+                      fallbackIcon="🎓"
+                      scale={institution.logoScale}
+                    />
+                    <Column minWidth={0} gap="4">
+                      <Text id={institution.name} variant="heading-strong-l">
+                        {institution.name}
+                      </Text>
+                      <Text variant="heading-default-xs" onBackground="neutral-weak">
+                        {institution.description}
+                      </Text>
+                    </Column>
+                  </Row>
                 ))}
               </Column>
             </>

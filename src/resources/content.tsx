@@ -130,6 +130,7 @@ const about: About = {
     experiences: [
       {
         company: "BitMEX",
+        logo: "/images/companies/bitmex.png",
         timeframe: "2026 – Present",
         role: "Engineering Lead, Custody",
         achievements: [
@@ -156,6 +157,7 @@ const about: About = {
       },
       {
         company: "Ernst & Young (EY)",
+        logo: "/images/companies/ey.png",
         timeframe: "2022 - 2026",
         role: "Head of Blockchain & Crypto Practice Spain",
         achievements: [
@@ -185,6 +187,8 @@ const about: About = {
       },
       {
         company: "Swear IT",
+        logo: "/images/companies/swearit.png",
+        logoScale: 1.58,
         timeframe: "2020 – 2024",
         role: "Tech Co-Founder",
         achievements: [
@@ -208,6 +212,7 @@ const about: About = {
       },
       {
         company: "TECH Universidad Tecnológica",
+        logo: "/images/companies/tech.png",
         timeframe: "2022 – Present",
         role: "Professor",
         achievements: [
@@ -225,6 +230,7 @@ const about: About = {
       },
       {
         company: "KeepCoding®",
+        logo: "/images/companies/keepcoding.png",
         timeframe: "2023 – Present",
         role: "Professor",
         achievements: [
@@ -254,16 +260,19 @@ const about: About = {
     institutions: [
       {
         name: "Alcalá University",
+        logo: "/images/education/uah.png",
         description: (
           <>Specialized program in Blockchain and Decentralized Applications.</>
         ),
       },
       {
         name: "Yacambú University",
+        logo: "/images/education/yacambu.png",
         description: <>Bachelor’s degree in Industrial Engineering.</>,
       },
       {
         name: "CryptoCurrency Security Standard Auditor (CCSSA)",
+        logo: "/images/education/ccss.png",
         description: (
           <>
             Expert in the CCSS standard, able to evaluate cryptocurrency-based
@@ -274,6 +283,7 @@ const about: About = {
 
       {
         name: "Grupo Vaughan",
+        logo: "/images/education/vaughan.png",
         description: (
           <>
             Executive-level training in professional English for business and

@@ -146,6 +146,10 @@ export interface About extends BasePageConfig {
     experiences: Array<{
       /** Company name */
       company: string;
+      /** Path to the company logo */
+      logo?: string;
+      /** Optional scale adjustment for the company logo */
+      logoScale?: number;
       /** Timeframe of employment */
       timeframe: string;
       /** Role or job title */
@@ -175,6 +179,10 @@ export interface About extends BasePageConfig {
     institutions: Array<{
       /** Institution name */
       name: string;
+      /** Path to the institution logo */
+      logo?: string;
+      /** Optional scale adjustment for the institution logo */
+      logoScale?: number;
       /** Description of studies */
       description: React.ReactNode;
     }>;
