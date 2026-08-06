@@ -26,7 +26,6 @@
     width: 44px;
     height: 44px;
     overflow: hidden;
-    border: 0;
     border-radius: 50%;
     outline: 2px solid transparent;
     outline-offset: 2px;
@@ -51,15 +50,18 @@
 }
 
 .logoFallback {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
     background: var(--neutral-background-strong);
     font-size: 20px;
     line-height: 1;
     filter: grayscale(1);
+}
+
+.projectList {
+    border-top: 1px solid var(--neutral-border-weak);
+}
+
+.projectCard {
+    border-bottom: 1px solid var(--neutral-border-weak);
 }
 
 @media (prefers-reduced-motion: reduce) {

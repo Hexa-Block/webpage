@@ -12,9 +12,10 @@ import {
   Schema,
   Row,
 } from "@once-ui-system/core";
-import { baseURL, about, home, person, social } from "@/resources";
+import { baseURL, about, home, person, social, work } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import Logo from "@/components/about/Logo";
+import SelectedProjects from "@/components/about/SelectedProjects";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
 
@@ -49,6 +50,11 @@ export default function About() {
       title: about.technical.title,
       display: about.technical.display,
       items: about.technical.skills.map((skill) => skill.title),
+    },
+    {
+      title: about.projects.title,
+      display: about.projects.display,
+      items: [],
     },
   ];
   return (
@@ -291,7 +297,6 @@ export default function About() {
                     <Logo
                       logo={institution.logo}
                       fallbackIcon="🎓"
-                      scale={institution.logoScale}
                     />
                     <Column minWidth={0} gap="4">
                       <Text id={institution.name} variant="heading-strong-l">
@@ -359,6 +364,32 @@ export default function About() {
                   </Column>
                 ))}
               </Column>
+            </>
+          )}
+
+          {about.projects.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.projects.title}
+                variant="display-strong-s"
+                marginTop="40"
+                marginBottom="m"
+              >
+                {about.projects.title}
+              </Heading>
+              <SelectedProjects limit={about.projects.limit} />
+              <Row fillWidth horizontal="end" marginTop="m" marginBottom="40">
+                <Button
+                  href={work.path}
+                  variant="secondary"
+                  size="s"
+                  weight="default"
+                  arrowIcon
+                >
+                  View all projects
+                </Button>
+              </Row>
             </>
           )}
         </Column>

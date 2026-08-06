@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import styles from "./about.module.scss";
 
 type LogoProps = {
@@ -6,13 +7,12 @@ type LogoProps = {
   scale?: number;
 };
 
-export default function Logo({
-  logo,
-  fallbackIcon,
-  scale,
-}: LogoProps) {
+export default function Logo({ logo, fallbackIcon, scale }: LogoProps) {
   return (
-    <span className={styles.logo} aria-hidden="true">
+    <span
+      className={classNames(styles.logo, { [styles.logoFallback]: !logo })}
+      aria-hidden="true"
+    >
       {logo ? (
         <img
           src={logo}
@@ -23,9 +23,7 @@ export default function Logo({
           style={scale ? { transform: `scale(${scale})` } : undefined}
         />
       ) : (
-        <span className={styles.logoFallback}>
-          {fallbackIcon}
-        </span>
+        fallbackIcon
       )}
     </span>
   );

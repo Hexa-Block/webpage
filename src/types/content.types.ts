@@ -169,6 +169,15 @@ export interface About extends BasePageConfig {
       }>;
     }>;
   };
+  /** Selected projects section */
+  projects: {
+    /** Whether to display selected projects */
+    display: boolean;
+    /** Title for the selected projects section */
+    title: string;
+    /** Maximum number of projects to display */
+    limit: number;
+  };
   /** Education section */
   education: {
     /** Whether to display the education section */
@@ -181,8 +190,6 @@ export interface About extends BasePageConfig {
       name: string;
       /** Path to the institution logo */
       logo?: string;
-      /** Optional scale adjustment for the institution logo */
-      logoScale?: number;
       /** Description of the education */
       description: React.ReactNode;
     }>;

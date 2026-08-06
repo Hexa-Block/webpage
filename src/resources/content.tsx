@@ -293,6 +293,11 @@ const about: About = {
       },
     ],
   },
+  projects: {
+    display: true,
+    title: "Selected Projects",
+    limit: 3,
+  },
   technical: {
     display: false, // set to false to hide this section
     title: "Technical skills",
