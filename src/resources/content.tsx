@@ -254,9 +254,9 @@ const about: About = {
       },
     ],
   },
-  studies: {
+  education: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
         name: "Alcalá University",
