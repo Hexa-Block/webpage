@@ -1,6 +1,7 @@
 import {
   About,
   Blog,
+  Company,
   Gallery,
   Home,
   Newsletter,
@@ -9,6 +10,10 @@ import {
   Work,
 } from "@/types";
 import { Row, Text } from "@once-ui-system/core";
+
+const company: Company = {
+  name: "HexaBlock",
+};
 
 const person: Person = {
   firstName: "Pedro",
@@ -23,7 +28,7 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to HexaBlock’s Newsletter</>,
+  title: <>Subscribe to {company.name}’s Newsletter</>,
   description: <>Insights on blockchain and digital assets</>,
 };
 
@@ -67,9 +72,9 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>HexaBlocks</>,
+  title: `${company.name} — Blockchain & Digital Assets`,
+  description: `${company.name} helps organizations design and deliver secure blockchain and digital asset initiatives.`,
+  headline: <>{company.name}</>,
   featured: {
     display: true,
     title: (
@@ -95,7 +100,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About our team`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name},from ${person.location}`,
   tableOfContent: {
     display: true,
     subItems: true,
@@ -330,7 +335,7 @@ const blog: Blog = {
   path: "/blog",
   label: "Blog",
   title: "Writing about Blockchain & Digital Assets...",
-  description: `Read what ${person.name} has been up to recently`,
+  description: `Read what ${company.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
@@ -338,8 +343,8 @@ const blog: Blog = {
 const work: Work = {
   path: "/work",
   label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  title: `Projects — ${company.name}`,
+  description: `Blockchain and digital asset projects by ${company.name}`,
   // Create new project pages by adding a new .mdx file to app/work/projects
   // All projects will be listed on the /home and /work routes
 };
@@ -347,8 +352,8 @@ const work: Work = {
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
+  title: `Photo gallery — ${company.name}`,
+  description: `A photo collection by ${company.name}`,
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
@@ -361,4 +366,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { company, person, social, newsletter, home, about, blog, work, gallery };
